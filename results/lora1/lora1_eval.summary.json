@@ -1,0 +1,6 @@
+{
+  "num_samples": 100,
+  "avg_rule_score": 0.12050000000000001,
+  "risky_response_rate": 0.06,
+  "use_gold_category": true
+}

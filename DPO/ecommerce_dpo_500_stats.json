@@ -1,0 +1,20 @@
+{
+  "num_records": 500,
+  "num_source_rows": 100,
+  "category_counts": {
+    "退换货场景": 75,
+    "物流查询场景": 75,
+    "签收未收到场景": 50,
+    "错发漏发场景": 50,
+    "商品参数场景": 75,
+    "质量投诉场景": 75,
+    "订单修改场景": 50,
+    "价格优惠场景": 25,
+    "其他咨询场景": 25
+  },
+  "prompt_type_counts": {
+    "infer_category": 400,
+    "gold_category": 100
+  },
+  "source_model_output_rejected_count": 100
+}

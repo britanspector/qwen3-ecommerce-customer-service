@@ -1,0 +1,49 @@
+{
+  "experiment": "lora_qk_r16_fp16_alpha32",
+  "base_model": "/root/autodl-tmp/modelscope/Qwen/Qwen3-8B",
+  "train_file": "/root/firstTunning/data/ecommerce_sft_messages_recommended_v3_train_4000_balanced.jsonl",
+  "eval_file": "/root/firstTunning/data/ecommerce_sft_messages_recommended_v3_eval_400_balanced.jsonl",
+  "rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_preset": "qk",
+  "target_modules": [
+    "q_proj",
+    "k_proj"
+  ],
+  "quantization": "none",
+  "dtype": "fp16",
+  "learning_rate": 5e-05,
+  "num_train_epochs": 1.0,
+  "max_steps": -1,
+  "max_length": 768,
+  "max_train_samples": 0,
+  "max_eval_samples": 0,
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "train_samples": 4000,
+  "eval_samples": 400,
+  "train_runtime_seconds": 954.9253995418549,
+  "max_memory_allocated_gb": 17.5748,
+  "max_memory_reserved_gb": 18.7402,
+  "train_metrics": {
+    "train_runtime": 954.6459,
+    "train_samples_per_second": 4.19,
+    "train_steps_per_second": 0.524,
+    "total_flos": 2.755351159214899e+16,
+    "train_loss": 3.439661834716797,
+    "epoch": 1.0,
+    "max_memory_allocated_gb": 17.5748,
+    "max_memory_reserved_gb": 18.7402
+  },
+  "eval_metrics": {
+    "eval_loss": 3.405587673187256,
+    "eval_mean_token_accuracy": 0.40690405001359065,
+    "eval_runtime": 14.333,
+    "eval_samples_per_second": 27.908,
+    "eval_steps_per_second": 27.908,
+    "epoch": 1.0,
+    "max_memory_allocated_gb": 17.5748,
+    "max_memory_reserved_gb": 18.7402
+  }
+}
